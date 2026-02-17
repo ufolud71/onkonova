@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt — OnkoNova</title>
+  <meta name="description" content="OnkoNova — Fundacja Onkologiczna." />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  
+<div class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html" aria-label="OnkoNova - strona główna">
+      <img src="assets/logo.png" alt="Logo OnkoNova" />
+      <div class="title">
+        OnkoNova
+        <small>Fundacja Onkologiczna</small>
+      </div>
+    </a>
+
+    <button class="btn mobile-toggle" id="mobileToggle" type="button" aria-label="Menu">Menu</button>
+
+    <nav class="nav" id="nav" aria-label="Główna nawigacja">
+      <a href="about.html">O fundacji</a>
+      <a href="statute.html">Statut fundacji</a>
+      <a href="patient.html">Dla pacjenta</a>
+      <a href="donors.html">Darczyńcy</a>
+      <a href="cooperation.html">Współpraca</a>
+      <a href="board.html">Zarząd fundacji</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
+
+    <div class="actions">
+      <a class="btn primary" href="donors.html">Wesprzyj</a>
+    </div>
+  </div>
+</div>
+
+  <main class="container">
+    <div class="page-title">
+      <div class="breadcrumb">OnkoNova / Kontakt</div>
+      <h1>Kontakt</h1>
+    </div>
+    
+<section class="section">
+  <div class="grid2">
+    <div class="card">
+      <h2>Kontakt</h2>
+      <p>Najprostsza droga: zadzwoń lub napisz wiadomość.</p>
+
+      <div class="kpi" style="margin-top:12px;">
+        <b>Kontakt telefoniczny</b>
+        <span>
+          Prezes Fundacji — Joanna Skarbek: <a href="tel:+48668203780">668 203 780</a><br/>
+          Wiceprezes Fundacji — Anna Weliczko: <a href="tel:+48662959260">662 959 260</a><br/>
+          Obsługa prawna / Współpraca: <a href="tel:+48668202782">668 202 782</a>
+        </span>
+      </div>
+
+      <hr class="sep"/>
+
+      <p class="small">
+        Możemy tu dodać: adres siedziby, NIP/KRS/REGON, linki do social mediów oraz mapę Google (jeśli chcesz).
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Napisz do nas</h2>
+      <form id="contactForm" class="form">
+        <div>
+          <label>Imię</label>
+          <input name="name" placeholder="Twoje imię" required />
+        </div>
+        <div>
+          <label>Email</label>
+          <input name="email" type="email" placeholder="adres@email.pl" required />
+        </div>
+        <div style="grid-column: 1 / -1;">
+          <label>Wiadomość</label>
+          <textarea name="message" placeholder="W czym możemy pomóc?" required></textarea>
+        </div>
+        <div style="grid-column: 1 / -1; display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+          <button class="btn primary" type="submit">Wyślij</button>
+          <span id="status" class="small"></span>
+        </div>
+      </form>
+
+      <div class="notice" style="margin-top:12px;">
+        Formularz jest w wersji demonstracyjnej — na życzenie podłączę wysyłkę na e-mail albo zapis do Google Sheets.
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  
+<footer class="footer">
+  <div class="container">
+    <div class="footgrid">
+      <div>
+        <b>OnkoNova — Fundacja Onkologiczna</b><br/>
+        <span class="small">© <span id="year"></span> Wszystkie prawa zastrzeżone.</span>
+      </div>
+      <div class="small">
+        <div><b>Skróty:</b> <a href="contact.html">Kontakt</a> · <a href="statute.html">Statut</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+
+</body>
+</html>
