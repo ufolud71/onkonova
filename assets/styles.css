@@ -186,17 +186,14 @@ p{ color: var(--muted); line-height: 1.6; margin: 0 0 14px; }
   gap: 14px;
   align-items: start;
 }
+
 .avatar{
-  width: 140px; height: 140px;
+  width: 140px;
+  height: 140px;
   border-radius: 26px;
-  background:
-    radial-gradient(60px 60px at 30% 25%, rgba(70,194,178,.35), rgba(70,194,178,0)),
-    radial-gradient(70px 70px at 80% 20%, rgba(242,163,58,.28), rgba(242,163,58,0)),
-    rgba(255,255,255,.06);
+  object-fit: cover;
   border: 1px solid rgba(255,255,255,.12);
-  display:flex; align-items:center; justify-content:center;
-  font-weight:900;
-  letter-spacing:.5px;
+  box-shadow: var(--shadow);
 }
 
 hr.sep{
