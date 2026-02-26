@@ -71,44 +71,45 @@
       <h2>Napisz do nas</h2>
 
       <!-- FORMULARZ PODPIĘTY POD FORMSPREE -->
-      <form action="https://formspree.io/f/xpqjbnqb" method="POST" class="form">
-
+      <form action="ACTION_URL" method="POST" class="form contact-form">
         <div>
           <label>Imię i nazwisko</label>
           <input name="name" placeholder="Twoje imię i nazwisko" required />
         </div>
-
+      
         <div>
           <label>Email</label>
           <input name="email" type="email" placeholder="adres@email.pl" required />
         </div>
-
-        <div style="grid-column: 1 / -1;">
+      
+        <div class="full">
           <label>Wiadomość</label>
           <textarea name="message" placeholder="W czym możemy pomóc?" required></textarea>
         </div>
-
-        <!-- RODO -->
-        <div class="form-row full">
+      
+        <!-- RODO BOX -->
+        <div class="full">
           <label class="consent-box">
-            <input type="checkbox" name="consent" required>
+            <input type="checkbox" name="consent" required />
             <span>
               Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w powyższym formularzu w celu kontaktu zwrotnego.
               <a href="#">Polityka prywatności</a>
             </span>
           </label>
         </div>
-
-        <!-- ukryte pola dla Formspree -->
+      
+        <!-- Formspree helpers -->
         <input type="hidden" name="_subject" value="Nowa wiadomość z formularza OnkoNova">
         <input type="hidden" name="_captcha" value="false">
-
-        <div class="form-row full">
+      
+        <!-- ACTIONS -->
+        <div class="full form-actions">
           <button class="btn primary" type="submit">Wyślij</button>
+          <p class="form-hint small">Odpowiemy tak szybko, jak to możliwe.</p>
         </div>
-
+      
       </form>
-
+      
       <div class="form-note">
         Po wysłaniu formularza otrzymasz potwierdzenie na ekranie.
       </div>
