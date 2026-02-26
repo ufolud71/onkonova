@@ -266,7 +266,7 @@ textarea{ min-height: 120px; resize: vertical; grid-column: 1 / -1; }
   align-items:flex-start;
   gap:12px;
   text-align:left;
-  max-width: 520px;
+  max-width: 460px;
 }
 
 .form-consent input{
@@ -277,6 +277,15 @@ textarea{ min-height: 120px; resize: vertical; grid-column: 1 / -1; }
 .form-consent span{
   line-height: 1.45;
   opacity: .9;
+}
+
+.form-note{
+  margin-top: 18px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  opacity: .75;
+  border: 1px solid rgba(255,255,255,.08);
 }
 
 @media (max-width: 980px){
