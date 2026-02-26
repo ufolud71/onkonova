@@ -225,13 +225,14 @@ hr.sep{
   margin: 18px 0;
 }
 
-/* Forms (ONE definition) */
+/* Forms */
 .form{
   display:grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
+/* full-width helper */
 .form .full{ grid-column: 1 / -1; }
 
 label{
@@ -267,8 +268,9 @@ textarea{
 
 .form-hint{ margin: 0; opacity: .9; }
 
-/* Consent box (final) */
+/* Consent box */
 .consent-box{
+  grid-column: 1 / -1; /* zabezpieczenie, nawet jak zapomnisz .full */
   display:flex;
   gap:12px;
   align-items:flex-start;
@@ -280,18 +282,19 @@ textarea{
   border: 1px solid rgba(255,255,255,.10);
 }
 
-.consent-box span{
-  display:block;
-  max-width: 100%;
-  overflow-wrap: anywhere;
-  line-height: 1.45;
-  opacity: .92;
-}
-
 .consent-box input{
   margin-top: 3px;
   transform: scale(1.1);
   flex: 0 0 auto;
+}
+
+.consent-box span{
+  display:block;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  line-height: 1.45;
+  opacity: .92;
 }
 
 .consent-box a{
@@ -323,7 +326,10 @@ textarea{
 }
 
 .footer .footgrid{
-  display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap;
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
   border-top: 1px solid rgba(255,255,255,.12);
   padding-top: 16px;
 }
