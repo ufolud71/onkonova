@@ -340,6 +340,51 @@ textarea{
   color: rgba(238,247,247,.92);
 }
 
+/* === CONSENT FIX (kill-switch) === */
+.form .full{ grid-column: 1 / -1 !important; }
+
+label.consent-box{
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+
+  padding: 12px 14px !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.06) !important;
+  border: 1px solid rgba(255,255,255,.10) !important;
+
+  /* hard reset dziwnych rzeczy */
+  writing-mode: horizontal-tb !important;
+  transform: none !important;
+  float: none !important;
+  position: relative !important;
+}
+
+label.consent-box input{
+  flex: 0 0 auto !important;
+  margin: 3px 0 0 0 !important;
+  transform: scale(1.1) !important;
+}
+
+label.consent-box .consent-text{
+  display: block !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow-wrap: anywhere !important;
+  white-space: normal !important;
+
+  writing-mode: horizontal-tb !important;
+  transform: none !important;
+  line-height: 1.45 !important;
+  opacity: .92 !important;
+}
+
 .small{ font-size: 13px; color: rgba(238,247,247,.70); }
 
 /* Responsive */
