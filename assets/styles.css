@@ -288,6 +288,41 @@ textarea{ min-height: 120px; resize: vertical; grid-column: 1 / -1; }
   border: 1px solid rgba(255,255,255,.08);
 }
 
+/* Consent box like the example */
+.consent-box{
+  grid-column: 1 / -1;
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+}
+
+.consent-box input{
+  margin-top: 3px;
+  transform: scale(1.1);
+  flex: 0 0 auto;
+}
+
+.consent-box span{
+  line-height: 1.45;
+  opacity: .9;
+  display:block;
+}
+
+.consent-box a{
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.consent-box:hover{
+  border-color: rgba(255,255,255,.18);
+  background: rgba(255,255,255,.075);
+}
+
 @media (max-width: 980px){
   .hero{ grid-template-columns: 1fr; }
   .kpis{ grid-template-columns: 1fr; }
