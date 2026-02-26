@@ -1,12 +1,12 @@
 :root{
-  --bg:#0b2a2a;              /* deep teal */
-  --bg2:#0f3b3b;             /* teal */
+  --bg:#0b2a2a;
+  --bg2:#0f3b3b;
   --card: rgba(255,255,255,.08);
   --border: rgba(255,255,255,.14);
   --text:#eef7f7;
   --muted: rgba(238,247,247,.78);
-  --accent:#f2a33a;          /* warm orange */
-  --accent2:#46c2b2;         /* mint/teal highlight */
+  --accent:#f2a33a;
+  --accent2:#46c2b2;
   --shadow: 0 18px 60px rgba(0,0,0,.35);
   --radius: 22px;
 }
@@ -232,7 +232,6 @@ hr.sep{
   gap: 16px;
 }
 
-/* full-width helper */
 .form .full{ grid-column: 1 / -1; }
 
 label{
@@ -269,41 +268,47 @@ textarea{
 .form-hint{ margin: 0; opacity: .9; }
 
 /* Consent box */
-.consent-box{
+label.consent-box{
   grid-column: 1 / -1;
   display:flex;
-  gap:12px;
-  align-items:flex-start;
-  width:100%;
-  padding:12px 14px;
-  border-radius:14px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
   background: rgba(255,255,255,.06);
   border: 1px solid rgba(255,255,255,.10);
+  margin-bottom: 0;
 }
 
-.consent-box input{
-  margin-top: 3px;
-  transform: scale(1.1);
+label.consent-box:hover{
+  border-color: rgba(255,255,255,.18);
+  background: rgba(255,255,255,.075);
+}
+
+label.consent-box input[type="checkbox"]{
   flex: 0 0 auto;
+  width: auto;
+  margin: 3px 0 0 0;
+  transform: scale(1.1);
 }
 
-.consent-box span{
-  display:block;
-  min-width:0;
-  line-height:1.45;
-  opacity:.92;
-  overflow-wrap:anywhere;
+label.consent-box .consent-text{
+  display: block;
+  min-width: 0;
+  line-height: 1.45;
+  opacity: .92;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  font-size: 13px;
+  color: rgba(238,247,247,.75);
 }
 
-.consent-box a{
+label.consent-box .consent-text a{
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 3px;
-}
-
-.consent-box:hover{
-  border-color: rgba(255,255,255,.18);
-  background: rgba(255,255,255,.075);
 }
 
 /* Note under form */
@@ -338,51 +343,6 @@ textarea{
   background: rgba(242,163,58,.10);
   border: 1px solid rgba(242,163,58,.25);
   color: rgba(238,247,247,.92);
-}
-
-/* === CONSENT FIX (kill-switch) === */
-.form .full{ grid-column: 1 / -1 !important; }
-
-label.consent-box{
-  grid-column: 1 / -1 !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: flex-start !important;
-  justify-content: flex-start !important;
-  gap: 12px !important;
-
-  padding: 12px 14px !important;
-  border-radius: 14px !important;
-  background: rgba(255,255,255,.06) !important;
-  border: 1px solid rgba(255,255,255,.10) !important;
-
-  /* hard reset dziwnych rzeczy */
-  writing-mode: horizontal-tb !important;
-  transform: none !important;
-  float: none !important;
-  position: relative !important;
-}
-
-label.consent-box input{
-  flex: 0 0 auto !important;
-  margin: 3px 0 0 0 !important;
-  transform: scale(1.1) !important;
-}
-
-label.consent-box .consent-text{
-  display: block !important;
-  width: auto !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
-  overflow-wrap: anywhere !important;
-  white-space: normal !important;
-
-  writing-mode: horizontal-tb !important;
-  transform: none !important;
-  line-height: 1.45 !important;
-  opacity: .92 !important;
 }
 
 .small{ font-size: 13px; color: rgba(238,247,247,.70); }
