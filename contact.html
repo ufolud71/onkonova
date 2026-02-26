@@ -4,24 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kontakt — OnkoNova</title>
-  <meta name="description" content="OnkoNova — Fundacja Onkologiczna." />
+  <meta name="description" content="OnkoNova — skontaktuj się z fundacją onkologiczną." />
   <link rel="icon" href="assets/logo.png" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  
+
 <div class="topbar">
   <div class="container topbar-inner">
     <a class="brand" href="index.html" aria-label="OnkoNova - strona główna">
       <img src="assets/logo.png" alt="Logo OnkoNova" />
-      <div class="title">
-        OnkoNova
-        <small>Fundacja Onkologiczna</small>
-      </div>
+      <div class="title">OnkoNova<small>Fundacja Onkologiczna</small></div>
     </a>
-
     <button class="btn mobile-toggle" id="mobileToggle" type="button" aria-label="Menu">Menu</button>
-
     <nav class="nav" id="nav" aria-label="Główna nawigacja">
       <a href="about.html">O fundacji</a>
       <a href="statute.html">Statut fundacji</a>
@@ -31,7 +26,6 @@
       <a href="board.html">Zarząd fundacji</a>
       <a href="contact.html">Kontakt</a>
     </nav>
-
     <div class="actions">
       <a class="btn primary" href="donors.html">Wesprzyj</a>
     </div>
@@ -43,80 +37,77 @@
     <div class="breadcrumb">OnkoNova / Kontakt</div>
     <h1>Kontakt</h1>
   </div>
-    
-<section class="section">
-  <div class="grid2">
 
-    <div class="card">
-      <h2>Kontakt</h2>
-      <p>Najprostsza droga: zadzwoń lub napisz wiadomość.</p>
+  <section class="section">
+    <div class="grid2">
 
-      <div class="kpi" style="margin-top:12px;">
-        <b>Kontakt telefoniczny</b>
-        <span>
-          Prezes Fundacji — Joanna Skarbek: <a href="tel:+48668203780">668 203 780</a><br/>
-          Wiceprezes Fundacji — Anna Weliczko: <a href="tel:+48662959260">662 959 260</a><br/>
-          Obsługa prawna / Współpraca: <a href="tel:+48668202782">668 202 782</a>
-        </span>
+      <div class="card">
+        <h2>Dane kontaktowe</h2>
+        <p>Najprostsza droga: zadzwoń lub napisz wiadomość.</p>
+
+        <div class="kpi" style="margin-top:12px;">
+          <b>Kontakt telefoniczny</b>
+          <span>
+            Prezes Fundacji — Joanna Skarbek: <a href="tel:+48668203780">668 203 780</a><br/>
+            Wiceprezes Fundacji — Anna Weliczko: <a href="tel:+48662959260">662 959 260</a><br/>
+            Obsługa prawna / Współpraca: <a href="tel:+48668202782">668 202 782</a>
+          </span>
+        </div>
+
+        <hr class="sep"/>
+
+        <p class="small">
+          Możemy tu dodać: adres siedziby, NIP/KRS/REGON, linki do social mediów oraz mapę Google.
+        </p>
       </div>
 
-      <hr class="sep"/>
+      <div class="card">
+        <h2>Napisz do nas</h2>
 
-      <p class="small">
-        Możemy tu dodać: adres siedziby, NIP/KRS/REGON, linki do social mediów oraz mapę Google.
-      </p>
-    </div>
+        <form action="https://formspree.io/f/xpqjbnqb" method="POST" class="form">
+          <div>
+            <label for="name">Imię i nazwisko</label>
+            <input id="name" name="name" placeholder="Twoje imię i nazwisko" required />
+          </div>
 
-    <div class="card">
-      <h2>Napisz do nas</h2>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="adres@email.pl" required />
+          </div>
 
-      <!-- FORMULARZ PODPIĘTY POD FORMSPREE -->
-      <form action="https://formspree.io/f/xpqjbnqb" method="POST" class="form contact-form">
-        <div>
-          <label>Imię i nazwisko</label>
-          <input name="name" placeholder="Twoje imię i nazwisko" required />
+          <div class="full">
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" placeholder="W czym możemy pomóc?" required></textarea>
+          </div>
+
+          <div class="full">
+            <label class="consent-box">
+              <input type="checkbox" name="consent" required>
+              <span class="consent-text">
+                Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w powyższym formularzu w celu kontaktu zwrotnego.
+                <a href="#">Polityka prywatności</a>
+              </span>
+            </label>
+          </div>
+
+          <input type="hidden" name="_subject" value="Nowa wiadomość z formularza OnkoNova">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="full form-actions">
+            <button class="btn primary" type="submit">Wyślij</button>
+            <p class="form-hint small">Odpowiemy tak szybko, jak to możliwe.</p>
+          </div>
+        </form>
+
+        <div class="form-note">
+          Po wysłaniu formularza otrzymasz potwierdzenie na ekranie.
         </div>
-      
-        <div>
-          <label>Email</label>
-          <input name="email" type="email" placeholder="adres@email.pl" required />
-        </div>
-      
-        <div class="full">
-          <label>Wiadomość</label>
-          <textarea name="message" placeholder="W czym możemy pomóc?" required></textarea>
-        </div>
-      
-        <div class="full">
-          <label class="consent-box">
-            <input type="checkbox" name="consent" required>
-            <span class="consent-text">
-              Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w powyższym formularzu w celu kontaktu zwrotnego.
-              <a href="#">Polityka prywatności</a>
-            </span>
-          </label>
-        </div>
-      
-        <input type="hidden" name="_subject" value="Nowa wiadomość z formularza OnkoNova">
-        <input type="hidden" name="_captcha" value="false">
-      
-        <div class="full form-actions">
-          <button class="btn primary" type="submit">Wyślij</button>
-          <p class="form-hint small">Odpowiemy tak szybko, jak to możliwe.</p>
-        </div>
-      
-      </form>
-      
-      <div class="form-note">
-        Po wysłaniu formularza otrzymasz potwierdzenie na ekranie.
       </div>
 
     </div>
-  </div>
-</section>
-
+  </section>
 </main>
-  
+
 <footer class="footer">
   <div class="container">
     <div class="footgrid">
@@ -125,7 +116,7 @@
         <span class="small">© <span id="year"></span> Wszystkie prawa zastrzeżone.</span>
       </div>
       <div class="small">
-        <div><b>Skróty:</b> <a href="contact.html">Kontakt</a> · <a href="statute.html">Statut</a></div>
+        <b>Skróty:</b> <a href="contact.html">Kontakt</a> · <a href="statute.html">Statut</a>
       </div>
     </div>
   </div>
