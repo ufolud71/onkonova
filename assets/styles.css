@@ -266,29 +266,33 @@ textarea{
 }
 
 .form-hint{ margin: 0; opacity: .9; }
+.form .full{ grid-column: 1 / -1; }
 
 /* Consent box (final) */
 .consent-box{
   display:flex;
   gap:12px;
   align-items:flex-start;
+  width: 100%;
+  max-width: 100%;
   padding: 12px 14px;
   border-radius: 14px;
   background: rgba(255,255,255,.06);
   border: 1px solid rgba(255,255,255,.10);
 }
 
+.consent-box span{
+  display:block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  line-height: 1.45;
+  opacity: .92;
+}
+
 .consent-box input{
   margin-top: 3px;
   transform: scale(1.1);
   flex: 0 0 auto;
-}
-
-.consent-box span{
-  display:block;
-  line-height: 1.45;
-  opacity: .92;
-}
 
 .consent-box a{
   color: var(--accent);
