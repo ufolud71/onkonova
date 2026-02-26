@@ -88,11 +88,11 @@
           <textarea name="message" placeholder="W czym możemy pomóc?" required></textarea>
         </div>
 
-        <!-- 🔒 RODO -->
-        <div style="grid-column: 1 / -1;" class="small">
-          <label style="display:flex; gap:8px; align-items:flex-start;">
+        <!-- RODO -->
+        <div class="form-row full">
+          <label class="consent small">
             <input type="checkbox" required />
-            Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu zwrotnego.
+            <span>Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu zwrotnego.</span>
           </label>
         </div>
 
@@ -100,7 +100,7 @@
         <input type="hidden" name="_subject" value="Nowa wiadomość z formularza OnkoNova">
         <input type="hidden" name="_captcha" value="false">
 
-        <div style="grid-column: 1 / -1; display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+        <div class="form-row full form-actions">
           <button class="btn primary" type="submit">Wyślij</button>
           <span class="small">Odpowiemy tak szybko, jak to możliwe.</span>
         </div>
