@@ -24,7 +24,7 @@
 
     <nav class="nav" id="nav" aria-label="Główna nawigacja">
       <a href="about.html">O fundacji</a>
-      <a href="statue.html">Statut fundacji</a>
+      <a href="statute.html">Statut fundacji</a>
       <a href="patient.html">Dla pacjenta</a>
       <a href="donors.html">Darczyńcy</a>
       <a href="cooperation.html">Współpraca</a>
@@ -38,14 +38,15 @@
   </div>
 </div>
 
-  <main class="container">
-    <div class="page-title">
-      <div class="breadcrumb">OnkoNova / Kontakt</div>
-      <h1>Kontakt</h1>
-    </div>
+<main class="container">
+  <div class="page-title">
+    <div class="breadcrumb">OnkoNova / Kontakt</div>
+    <h1>Kontakt</h1>
+  </div>
     
 <section class="section">
   <div class="grid2">
+
     <div class="card">
       <h2>Kontakt</h2>
       <p>Najprostsza droga: zadzwoń lub napisz wiadomość.</p>
@@ -68,33 +69,53 @@
 
     <div class="card">
       <h2>Napisz do nas</h2>
-      <form id="contactForm" class="form">
+
+      <!-- FORMULARZ PODPIĘTY POD FORMSPREE -->
+      <form action="https://formspree.io/f/xpqjbnqb" method="POST" class="form">
+
         <div>
-          <label>Imię</label>
-          <input name="name" placeholder="Twoje imię" required />
+          <label>Imię i nazwisko</label>
+          <input name="name" placeholder="Twoje imię i nazwisko" required />
         </div>
+
         <div>
           <label>Email</label>
           <input name="email" type="email" placeholder="adres@email.pl" required />
         </div>
+
         <div style="grid-column: 1 / -1;">
           <label>Wiadomość</label>
           <textarea name="message" placeholder="W czym możemy pomóc?" required></textarea>
         </div>
+
+        <!-- 🔒 RODO -->
+        <div style="grid-column: 1 / -1;" class="small">
+          <label style="display:flex; gap:8px; align-items:flex-start;">
+            <input type="checkbox" required />
+            Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu zwrotnego.
+          </label>
+        </div>
+
+        <!-- ukryte pola dla Formspree -->
+        <input type="hidden" name="_subject" value="Nowa wiadomość z formularza OnkoNova">
+        <input type="hidden" name="_captcha" value="false">
+
         <div style="grid-column: 1 / -1; display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
           <button class="btn primary" type="submit">Wyślij</button>
-          <span id="status" class="small"></span>
+          <span class="small">Odpowiemy tak szybko, jak to możliwe.</span>
         </div>
+
       </form>
 
       <div class="notice" style="margin-top:12px;">
-        Formularz jest w wersji demonstracyjnej
+        Po wysłaniu formularza otrzymasz potwierdzenie na ekranie.
       </div>
+
     </div>
   </div>
 </section>
 
-  </main>
+</main>
   
 <footer class="footer">
   <div class="container">
@@ -109,7 +130,7 @@
     </div>
   </div>
 </footer>
-<script src="assets/site.js"></script>
 
+<script src="assets/site.js"></script>
 </body>
 </html>
