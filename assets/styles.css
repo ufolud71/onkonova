@@ -270,14 +270,13 @@ textarea{
 
 /* Consent box */
 .consent-box{
-  grid-column: 1 / -1; /* zabezpieczenie, nawet jak zapomnisz .full */
+  grid-column: 1 / -1;
   display:flex;
   gap:12px;
   align-items:flex-start;
-  width: 100%;
-  max-width: 100%;
-  padding: 12px 14px;
-  border-radius: 14px;
+  width:100%;
+  padding:12px 14px;
+  border-radius:14px;
   background: rgba(255,255,255,.06);
   border: 1px solid rgba(255,255,255,.10);
 }
@@ -290,11 +289,10 @@ textarea{
 
 .consent-box span{
   display:block;
-  min-width: 0;
-  max-width: 100%;
-  overflow-wrap: anywhere;
-  line-height: 1.45;
-  opacity: .92;
+  min-width:0;
+  line-height:1.45;
+  opacity:.92;
+  overflow-wrap:anywhere;
 }
 
 .consent-box a{
