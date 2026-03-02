@@ -40,20 +40,70 @@
 
   <section class="section">
     <div class="card">
-      <h2>Wesprzyj nas</h2>
+      <h2>Wesprzyj OnkoNovę</h2>
       <p>
-        Tu możesz opisać, w jaki sposób wspierać Fundację: darowizny, zbiórki, 1,5% podatku (jeśli dotyczy),
-        wsparcie rzeczowe, wolontariat.
+        Twoja darowizna pozwala nam działać — wspierać pacjentów onkologicznych, prowadzić edukację
+        i rozwijać programy pomocowe. Każda kwota ma znaczenie.
       </p>
-      <div class="grid3" style="margin-top:12px;">
-        <div class="kpi"><b>Darowizna</b><span>numer konta / tytuł przelewu</span></div>
-        <div class="kpi"><b>Partnerstwo</b><span>dla firm i instytucji</span></div>
-        <div class="kpi"><b>Wolontariat</b><span>jak dołączyć</span></div>
-      </div>
+
       <hr class="sep"/>
-      <div class="notice">
-        <b>Do uzupełnienia:</b> podeślij dane do przelewów (konto, bank, adres Fundacji).
+
+      <h3>Przelew bankowy</h3>
+      <p>Aby przekazać darowiznę, wykonaj przelew na poniższe dane:</p>
+
+      <div style="
+        background: rgba(255,255,255,.06);
+        border: 1px solid rgba(255,255,255,.12);
+        border-radius: 18px;
+        padding: 20px 24px;
+        margin-top: 8px;
+        display: grid;
+        gap: 14px;
+      ">
+        <div>
+          <div class="small" style="margin-bottom:4px;">Odbiorca</div>
+          <strong>OnkoNova Fundacja Onkologiczna</strong>
+        </div>
+        <div>
+          <div class="small" style="margin-bottom:4px;">Bank</div>
+          <strong>Nest Bank</strong>
+        </div>
+        <div>
+          <div class="small" style="margin-bottom:4px;">Numer konta</div>
+          <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+            <strong id="iban" style="font-size:17px; letter-spacing:.5px;">95 2530 0008 2041 1089 0674 0001</strong>
+            <button class="btn" onclick="
+              navigator.clipboard.writeText('95253000082041108906740001');
+              this.textContent='✓ Skopiowano';
+              setTimeout(()=>this.textContent='Kopiuj',2000);
+            " style="padding:6px 14px; font-size:13px;">Kopiuj</button>
+          </div>
+        </div>
+        <div>
+          <div class="small" style="margin-bottom:4px;">Sugerowany tytuł przelewu</div>
+          <strong>Darowizna na cele statutowe</strong>
+        </div>
       </div>
+
+      <hr class="sep"/>
+
+      <div class="grid2" style="margin-top:4px;">
+        <div class="kpi">
+          <b>Partnerstwo instytucjonalne</b>
+          <span>Jesteś firmą lub instytucją? Skontaktuj się z nami — znajdziemy formę współpracy.</span>
+        </div>
+        <div class="kpi">
+          <b>Wolontariat</b>
+          <span>Chcesz pomóc swoim czasem i umiejętnościami? Napisz do nas.</span>
+        </div>
+      </div>
+
+      <hr class="sep"/>
+
+      <p class="small" style="margin:0;">
+        Darowizny na rzecz fundacji mogą być odliczone od podstawy opodatkowania zgodnie z ustawą o podatku dochodowym.
+        W razie pytań skontaktuj się z nami przez <a href="contact.html" style="color:var(--accent); text-decoration:underline;">formularz kontaktowy</a>.
+      </p>
     </div>
   </section>
 </main>
